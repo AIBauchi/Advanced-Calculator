@@ -54,7 +54,7 @@ def sqrt(x):
         guess = (guess + x/guess) / 2
     return guess
 
-def (x, n):
+def nth_root(x, n):
     """
     Compute the nth root of a positive number.
 
