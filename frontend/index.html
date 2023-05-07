@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="calculator">
 
+        <div id = "numbers">
+            <input type="text" id="display" readonly>
+            <div id = "functions">
+                <button onclick=""></button>
+                <button onclick=""></button>
+                <button onclick=""></button>
+                <button onclick=""></button>
+                <button onclick="">log</button>
+                <button onclick="">ln</button>
+                <button onclick="">(-)</button>
+                <button onclick=""></button>
+                <button onclick="">hyp</button>
+                <button onclick="">sin</button>
+                <button onclick="">cos</button>
+                <button onclick="">tan</button>
+                <button onclick="">RCL</button>
+                <button onclick="">ENG</button>
+                <button onclick="">(</button>
+                <button onclick="">)</button>                
+                <button onclick=""></button>
+                <button onclick="">M+</button>
+            </div>
+
+            <div id="normal_numbers">
+                <button onclick="addToDisplay('7')">7</button>
+                <button onclick="addToDisplay('8')">8</button>
+                <button onclick="addToDisplay('9')">9</button>
+                <button class="clear" onclick="deletePrevious()">DEL</button>
+                <button class="clear" onclick="clearDisplay()">AC</button>
+
+                <button onclick="addToDisplay('4')">4</button>
+                <button onclick="addToDisplay('5')">5</button>
+                <button onclick="addToDisplay('6')">6</button>
+                <button onclick="addToDisplay('*')">×</button>
+                <button onclick="addToDisplay('/')">÷</button>
+
+                <button onclick="addToDisplay('1')">1</button>
+                <button onclick="addToDisplay('2')">2</button>
+                <button onclick="addToDisplay('3')">3</button>
+                <button onclick="addToDisplay('+')">+</button>
+                <button onclick="addToDisplay('-')">-</button>
+
+                <button onclick="addToDisplay('0')">0</button>
+                <button onclick="addToDisplay('.')">.</button>
+                <button onclick="addToDisplay('')">Exp</button>
+                <button onclick="addToDisplay('')">Ans</button>
+                <button onclick="calculate()">=</button>
+            </div>
+
+        </div>
+	</div>
+	<script src="script.js"></script>
+
+</body>
+</html>

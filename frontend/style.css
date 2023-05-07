@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(37, 37, 37);
+    font-family: Arial, sans-serif;
+}
+
+#calculator {
+    margin: 0 auto;
+    background-color: silver;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+}
+
+#calculator input[type="text"] {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    text-align: right;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#functions button {
+    background-color: #000000;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding: 10px;
+    text-align: center;
+    width: 40px;
+    height: 30px;
+}
+
+#normal_numbers button {
+    background-color: #f4f4f4;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+#numbers button:active {
+    background-color: #ccc;
+    border: 1px solid #999;
+    color: #000;
+    text-shadow: none;
+}
+
+#numbers button.function {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#numbers button.clear {
+    background-color: #ff6347;
+    border-color: #ff4500;
+    color: #fff;
+}
+
+#numbers button:hover {
+    background-color: #ddd;
+    border-color: #bbb;
+    color: #000;
+}
