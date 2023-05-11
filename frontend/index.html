@@ -1,1 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Lexend+Deca:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style-1.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="subheader-1">
+          <h3>Casio</h3>
+          <p>fx-991ES</p>
+          <p>NATURAL DISPLAY</p>
+        </div>
+        <div class="card">
+          <div class="subheader">
+            <div class="vl"></div>
+            <div class="vg"></div>
+            <div class="vc"></div>
+          </div>
+          <p>Two way power</p>
+        </div>
+      </div>
+      <div class="main-screen">
+        <div class="screen">
+          <div class="subscreen">
+            <p>M</p>
+            <p>R</p>
+            <p>Math A</p>
+          </div>
+          <div class="subscreen-2">
+            <p><input type="text" id="display" readonly></p>
+            <p><input type="text" id="answer" readonly></p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="button-1">
+          <p>SHIFT</p>
+          <div class="btn"></div>
+        </div>
+        <div class="button-1 btp">
+          <p>ALPHA</p>
+          <div class="btn"></div>
+        </div>
+        <div class="button-2">
+          <div class="ggg">
+            <p class="btc">↑</p>
+            <div class="ftp">
+              <p>←</p>
+              <p>→</p>
+            </div>
+            <p>↓</p>
+          </div>
+        </div>
+        <div class="button-1">
+          <p>MODE</p>
+          <div class="btn"></div>
+        </div>
+        <div class="button-1">
+          <p><span>ON</span></p>
+          <div class="btn"></div>
+        </div>
+        <div class="button-1">
+          <p>SOLVE =</p>
+          <div class="btn btn-2">CALC</div>
+        </div>
+        <div class="button-1">
+          <p>dy/dx :</p>
+          <div class="btn btn-2">∫∮▬</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>x!</p>
+          <div class="btn btn-2">X<sup>-1</sup></div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>⨊ ∞</p>
+          <div class="btn btn-2">log∎◘</div>
+        </div>
+      </div>
+      <div class="button2">
+        <div class="button-1 btn-2p">
+          <p>▬ ⊟</p>
+          <div class="btn btn-2 btn-3">⊟</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>∛</p>
+          <div class="btn btn-2 btn-3">√</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>x<sup>3</sup> <span class="span-1">DEC</span></p>
+          <div class="btn btn-2 btn-3">x<sup>2</sup></div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>√ <span class="span-1">HEX</span></p>
+          <div class="btn btn-2 btn-3">x<sup>∎</sup></div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>10<sup>m</sup> <span class="span-1">EN</span></p>
+          <div class="btn btn-2 btn-3">log</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>e<sup>m</sup> <span class="span-1">OCT</span></p>
+          <div class="btn btn-2 btn-3">In</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>[<sup><</sup>][<sup>A</sup>]</p>
+          <div class="btn btn-2 btn-3">(-)</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>← [<sup>B</sup>]</p>
+          <div class="btn btn-2 btn-4"><sup>.,,,</sup></div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>Abs [<sup>c</sup>]</p>
+          <div class="btn btn-2 btn-6">hyp</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>sin<sup>-1</sup>[<sup>d</sup>]</p>
+          <div class="btn btn-2 btn-3 btn-5">Sin</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>cos<sup>-1</sup> <span class="span-1">E</span></p>
+          <div class="btn btn-2 btn-6">Cos</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>tan<sup>-1</sup> <span class="span-1">F</span></p>
+          <div class="btn btn-2 btn-6">Tan</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>STO</p>
+          <div class="btn btn-2 btn-6">RCL</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>← ¡</p>
+          <div class="btn btn-2 btn-6">ENG</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>%</p>
+          <button class="btn btn-2 btn-3" onclick="addToDisplay('(')">(</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>, x</p>
+          <button class="btn btn-2 btn-3" onclick="addToDisplay(')')">)</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>a¼↔Y</p>
+          <div class="btn btn-2 btn-7">S⇎D</div>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>M- M</p>
+          <div class="btn btn-2 btn-3">M+</div>
+        </div>
+      </div>
+      <div class="button-3">
+        <div class="button-1 btn-2pp">
+          <p>CONST</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('7')">7</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>CONV</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('8')">8</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>CLR</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('9')">9</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>INS</p>
+          <button class="btn-8 btn-9" onclick="deletePrevious()">DEL</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>OFF</p>
+          <button class="btn-8 btn-9" onclick="clearDisplay()">AC</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>[<sup>MATRIX</sup>]</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('4')">4</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>[<sup>VECTOR</sup>]</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('5')">5</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <br />
+          <button class="btn-8 btn-10" onclick="addToDisplay('6')">6</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>nPr</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('*')">×</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>nCr</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('/')">÷</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>[<sup>STAT</sup>]</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('1')">1</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>[<sup>CMPLX</sup>]</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('2')">2</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>[<sup>BASE</sup>]</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('3')">3</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>Pol</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('+')">+</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>Rec</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('-')">-</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>Rnd</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('0')">0</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>Ran</p>
+          <button class="btn-8 btn-10" onclick="addToDisplay('.')">.</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>π e</p>
+          <button class="btn-8 btn-12">x10<sup>x</sup></button>
+        </div>
+        <div class="button-1 btn-2p">
+          <p>DRG▸</p>
+          <button class="btn-8 btn-11" onclick="addToDisplay(ansValue())">ANS</button>
+        </div>
+        <div class="button-1 btn-2p">
+          <div class="hgf"></div>
+          <button class="btn-8 btn-10" onclick="calculate()">=</button>
+        </div>
+      </div>     
+      <footer>
+        <p>by PHACE</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
