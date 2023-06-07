@@ -9,7 +9,8 @@ class Matrix:
 
     def __add__(self, other):
         if self.rows != other.rows or self.columns != other.columns:
-            raise ValueError("Matrices must have the same dimensions for addition.")
+            raise ValueError("Matrices must have the"
+                             "same dimensions for addition.")
         result = []
         for i in range(self.rows):
             row = []
@@ -20,7 +21,8 @@ class Matrix:
 
     def __sub__(self, other):
         if self.rows != other.rows or self.columns != other.columns:
-            raise ValueError("Matrices must have the same dimensions for subtraction.")
+            raise ValueError("Matrices must have the"
+                             "same dimensions for subtraction.")
         result = []
         for i in range(self.rows):
             row = []
@@ -31,7 +33,10 @@ class Matrix:
 
     def __mul__(self, other):
         if self.columns != other.rows:
-            raise ValueError("The number of columns in the first matrix must match the number of rows in the second matrix for multiplication.")
+            raise ValueError("The number of columns"
+                             "in the first matrix must match the"
+                             "number of rows in the second matrix"
+                             "for multiplication.")
         result = []
         for i in range(self.rows):
             row = []
@@ -49,11 +54,13 @@ class Matrix:
         if self.rows == 1:
             return self.matrix[0][0]
         elif self.rows == 2:
-            return self.matrix[0][0] * self.matrix[1][1] - self.matrix[0][1] * self.matrix[1][0]
+            return self.matrix[0][0] * self.matrix[1][1]\
+                - self.matrix[0][1] * self.matrix[1][0]
         else:
             det = 0
             for i in range(self.columns):
-                det += ((-1) ** i) * self.matrix[0][i] * self.submatrix(0, i).determinant()
+                det += ((-1) ** i) * self.matrix[0][i]\
+                       * self.submatrix(0, i).determinant()
             return det
 
     def submatrix(self, row, column):
@@ -77,17 +84,19 @@ class Matrix:
         return Matrix(result)
 
 
-matrix1 = Matrix([[1, 2], [3, 4]])
-matrix2 = Matrix([[5, 6], [7, 8]])
-
-sum_matrix = matrix1 + matrix2
-print(sum_matrix)
-
-diff_matrix = matrix1 - matrix2
-print(diff_matrix)
-
-product_matrix = matrix1 * matrix2
-print(product_matrix)
-
-determinant = matrix1.determinant()
-print(determinant)
+# matrix1 = Matrix([[1, 2, 4], [3, 4, 7], [4, 1, 7]])
+# matrix2 = Matrix([[5, 6, 4], [7, 8, 6], [3, 7, 2]])
+#
+# sum_matrix = matrix1 + matrix2
+# print(sum_matrix)
+#
+# diff_matrix = matrix1 - matrix2
+# print(diff_matrix)
+#
+# product_matrix = matrix1 * matrix2
+# print(product_matrix)
+#
+# determinant = matrix1.determinant()
+# print(determinant)
+#
+# print(str(sum_matrix))"
