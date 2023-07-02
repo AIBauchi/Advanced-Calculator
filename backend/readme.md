@@ -30,4 +30,51 @@ The code in the `number-systems.py` file contains a series of functions for conv
 
 * The `deci(x, y)` function takes a positive integer x and a positive integer y representing the original number system, and returns the decimal equivalent of the number. If x is non-positive or y is not a valid base, a ValueError is raised.
 
-Each of these functions takes specific input(s) and returns specific output(s) based on the mathematical operation of converting between different number systems. The docstrings for each function provide more detail on the specific requirements for input(s) and output(s) and raise ValueErrors for any invalid inputs.
+Each of these functions takes specific input(s) and returns specific output(s) based on the mathematical operation of converting between different number systems. The docstrings for each function provide more detail on the specific
+
+
+## Vecra and Ratio 
+### Submodule File
+
+* The vecra is a simple Vector class that computes vector computations together with that of ratios.
+  | objects | Use Method |
+  |---------|------------|
+  | addition| VecAdd()   |
+  | Subs    | VecSub()   |
+  | Dot     | VecDot()   |
+  | Crosprod| VecCross() |
+  | Mag     | VecMag()   |
+  | Ratio   | Ratio()    |
+
+```
+from vecra import * #imports works fine
+
+vec_x = [5, 6, 2]
+vec_y = [1, 1, 1]
+vecra = Vecra()
+
+vec_add= vecra.VecAdd(vec_x, vec_y)
+print("vec_add:",vec_add)
+
+vec_sub= vecra.VecSub(vec_x, vec_y)
+print("vec_sub:",vec_sub)
+
+vec_cross= vecra.VecCross(vec_x, vec_y)
+print("vec_cross:",vec_cross)
+
+vec_mg= vecra.VecMag(vec_x)
+print("vec_mg:",vec_mg)
+
+vec_dot= vecra.VecDot(vec_x, vec_y)
+print("vec_dot:",vec_dot)
+```
+# output
+```
+vec_add: [6, 7, 3]
+vec_sub: [4, 5, 1]
+vec_cross: [4, -3, -1]
+vec_mg: 8.06225774829855
+vec_dot: 13
+```
+
+
